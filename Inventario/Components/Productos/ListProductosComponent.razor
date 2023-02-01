@@ -23,12 +23,12 @@
     <tbody>
         @foreach(var producto in temProductos)
             {
-                <tr>
-                    <td>@producto.ProductoNombre</td>
-                    <td>@producto.ProductoImagen</td>
-                    <td>@producto.ProductoDescripcion</td>
-                    <td><a href="producto/update/@producto.ProductoId">Actualizar</a></td>
-                </tr>
+        <tr>
+            <td>@producto.ProductoNombre</td>
+            <td>@producto.ProductoImagen</td>
+            <td>@producto.ProductoDescripcion</td>
+            <td><a href="producto/update/@producto.ProductoNombre">Actualizar</a></td>
+        </tr>
             }
     </tbody>
 </table>

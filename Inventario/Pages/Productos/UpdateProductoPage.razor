@@ -1,13 +1,13 @@
-﻿@page "/producto/update/{IdProducto}"
+﻿@page "/producto/update/{ProductoNombre}"
 
-<UpdateProductoComponent IdProducto="IdProducto"/>
+<UpdateProductoComponent ProductoNombre="@ProductoNombre"/>
 
 @code {
     [Parameter]
-    public int IdProducto { get; set; }
+    public string ProductoNombre { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        IdProducto = IdProducto;
+        ProductoNombre = ProductoNombre;
     }
 }

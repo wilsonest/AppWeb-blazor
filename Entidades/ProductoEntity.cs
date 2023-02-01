@@ -9,7 +9,6 @@ namespace Entidades
     public class ProductoEntity
     {
         [Key]
-        [StringLength(20)]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ProductoId { get; set; }
         [StringLength(100)]

@@ -22,6 +22,8 @@
             <InputSelect @bind-Value="oProducto.CategoriaId" class="form-control">
                 @foreach (var categoria in Categorias)
                 {
+                   
+
                     <option value="@categoria.CategoriaId">@categoria.CategoriasNombre</option>
                 }
             </InputSelect>

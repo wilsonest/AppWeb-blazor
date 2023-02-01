@@ -16,11 +16,11 @@ namespace Business
                 return db.Productos.ToList();
             }
         }
-        public static ProductoEntity ProductoById(int id)
+        public static ProductoEntity ProductoById(string Producto)
         {
             using (var db = new InventarioContext())
             {
-                return db.Productos.ToList().FirstOrDefault(p => p.ProductoId == id);
+                return db.Productos.ToList().FirstOrDefault(p => p.ProductoNombre == Producto);
             }
         }
 
